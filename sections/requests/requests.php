@@ -1,6 +1,6 @@
 <?php
 $SphQL = new SphinxqlQuery();
-$SphQL->select('id, votes, bounty')->from('requests, requests_delta');
+$SphQL->select('id, votes, bounty, lastvote, timefilled, year, timeadded')->from('requests, requests_delta');
 
 $SortOrders = array(
 	'votes' => 'votes',
